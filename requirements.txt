@@ -8,9 +8,7 @@ ydata-profiling
 
 notebook
 ipywidgets
-fastapi
-pydantic
-scikit-learn
-xgboost
+fastapi[all]
+scikit-learn==1.2.2
 
 
