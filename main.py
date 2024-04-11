@@ -10,11 +10,11 @@ app = FastAPI()
 
 # Define request body schema using Pydantic BaseModel
 class sepsisFeatures(BaseModel):
-    PRG: float
-    PL: float
-    PR: float
-    SK: float
-    TS: float
+    PRG: int
+    PL: int
+    PR: int
+    SK: int
+    TS: int
     M11: float
     BD2: float
     Age: int
@@ -65,9 +65,10 @@ rf_model = RanddomForest()
 @app.post("/predict/naive_bayes")
 def predictNaiveBayes(data: sepsisFeatures):
 
-    # convert data to dict and then to dataFrame
     df = pd.DataFrame([data.model_dump()])
+
     prediction = nb_model.predict(df)
+    prediction = str(prediction[0])
 
     return {"prediction": prediction}
 
@@ -78,7 +79,9 @@ def predictLogisticRegression(data: sepsisFeatures):
 
     # convert data to dict and then to dataFrame
     df = pd.DataFrame([data.model_dump()])
-    prediction = lr_model.predict(df)
+
+    prediction = nb_model.predict(df)
+    prediction = str(prediction[0])
 
     return {"prediction": prediction}
 
@@ -89,7 +92,9 @@ def predictRandomForest(data: sepsisFeatures):
 
     # convert data to dict and then to dataFrame
     df = pd.DataFrame([data.model_dump()])
-    prediction = rf_model.predict(df)
+
+    prediction = nb_model.predict(df)
+    prediction = str(prediction[0])
 
     return {"prediction": prediction}
 
@@ -102,4 +107,4 @@ def homepage():
 
 # Run FastAPI app
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="127.0.0.1", port=8000)
