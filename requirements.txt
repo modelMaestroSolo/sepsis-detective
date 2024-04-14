@@ -10,5 +10,3 @@ notebook
 ipywidgets
 fastapi[all]
 scikit-learn==1.2.2
-
-
