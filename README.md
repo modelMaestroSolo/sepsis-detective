@@ -72,13 +72,16 @@ List the main technologies, frameworks, and libraries used in your project.
 - Pandas
 - Scikit-learn
 
-## Author
 
-👤 **Solomon Yeboah**
 
-- GitHub: [@modelmaestrosolo](https://github.com/modelmaestrosolo)
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/your-linkedin-profile/)
-- Twitter: [@your-twitter-handle](https://twitter.com/your-twitter-handle)
+## 👥 Authors <a name="author"></a>
+
+🕵🏽‍♀️ **Solomon Yeboah**
+
+- GitHub: [GitHub Profile](https://github.com/modelMaestroSolo)
+- Twitter: [Twitter Handle](https://twitter.com/modelmaestroSol)
+- LinkedIn: [LinkedIn Profile](www.linkedin.com/in/yebsolomon)
+
 - 
 ## Contributing
 If you would like others to contribute to your project, provide guidelines on how to do so. Include information on how to report bugs, suggest improvements, or submit pull requests.
