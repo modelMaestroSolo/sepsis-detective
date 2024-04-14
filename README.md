@@ -23,7 +23,9 @@ List key features or functionalities of your project.
 ## Installation
 
 git clone https://github.com/modelMaestroSolo/sepsis-detective
+
 cd your-project
+
 pip install -r requirements.txt
 
 ## Usage
@@ -70,6 +72,14 @@ List the main technologies, frameworks, and libraries used in your project.
 - Pandas
 - Scikit-learn
 
+## Author
+
+👤 **Solomon Yeboah**
+
+- GitHub: [@modelmaestrosolo](https://github.com/modelmaestrosolo)
+- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/your-linkedin-profile/)
+- Twitter: [@your-twitter-handle](https://twitter.com/your-twitter-handle)
+- 
 ## Contributing
 If you would like others to contribute to your project, provide guidelines on how to do so. Include information on how to report bugs, suggest improvements, or submit pull requests.
 
